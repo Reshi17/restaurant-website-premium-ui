@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlameGrill Express | Premium Fast Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="burger.css">
+    <link rel="icon" href="burgerlogo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Flame<span>Grill</span> Express</a>
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Taste That Makes You Crave More</h1>
+                <p>Indulge in our premium fast food and signature dishes crafted with passion and perfection. Experience flavors that will make your taste buds dance with joy.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Order Now</a>
+                    <a href="#reservation" class="btn btn-secondary">Reserve Table</a>
+                </div>
+            </div>
+        </div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Story</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1687697861242-03e99059e833?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2hlZiUyMGNvb2tpbmd8ZW58MHx8MHx8fDA%3D" alt="Chef preparing food">
+                </div>
+                <div class="about-text">
+                    <h2>Welcome to FlameGrill Express</h2>
+                    <p>Founded in 2015, FlameGrill Express began with a simple mission: to serve premium fast food that doesn't compromise on quality. Our chefs combine traditional recipes with modern culinary techniques to create unforgettable flavors.</p>
+                    <p>We believe that great food starts with great ingredients. That's why we source only the freshest produce, highest-quality meats, and finest spices for every dish we serve.</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4>Premium Ingredients</h4>
+                                <p>Only the finest and freshest</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div>
+                                <h4>Freshly Made Daily</h4>
+                                <p>Prepared to order</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-hand-sparkles"></i>
+                            </div>
+                            <div>
+                                <h4>Hygienic Kitchen</h4>
+                                <p>Highest cleanliness standards</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h4>Quick Service</h4>
+                                <p>Fast without compromising quality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+            </div>
+            
+            <div class="category-tabs" id="categoryTabs">
+                <button class="category-btn active" data-category="fastfood">🍔 Fast Food</button>
+                <button class="category-btn" data-category="maincourse">🍛 Main Course</button>
+                <button class="category-btn" data-category="desserts">🍰 Desserts</button>
+                <button class="category-btn" data-category="beverages">🥤 Beverages</button>
+            </div>
+            
+            <div class="menu-grid" id="menuGrid">
+                <!-- Fast Food Items -->
+                <div class="menu-item" data-category="fastfood">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1580372648129-cb82ef5f1052?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHJlc3RhcnVhcm50JTIwY2xhc3NpYyUyMGNoZWVzZSUyMGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Classic Cheeseburger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Classic Cheeseburger</h3>
+                            <span class="menu-item-price">$9.99</span>
+                        </div>
+                        <p class="menu-item-desc">Juicy beef patty with melted cheese, fresh lettuce, tomato, and our special sauce in a soft brioche bun.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="fastfood">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Double Patty Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Double Patty Burger</h3>
+                            <span class="menu-item-price">$12.99</span>
+                        </div>
+                        <p class="menu-item-desc">Two juicy beef patties with double cheese, crispy bacon, onion rings, and barbecue sauce.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="fastfood">
+                    <div class="menu-item-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1683655058728-415f4f2674bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3Jpc3B5JTIwY2hpY2tlbiUyMGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Crispy Chicken Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Crispy Chicken Burger</h3>
+                            <span class="menu-item-price">$10.99</span>
+                        </div>
+                        <p class="menu-item-desc">Crispy fried chicken fillet with lettuce, mayo, and pickles in a sesame seed bun.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Main Course Items -->
+                <div class="menu-item" data-category="maincourse" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Chicken Biryani">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Chicken Biryani</h3>
+                            <span class="menu-item-price">$14.99</span>
+                        </div>
+                        <p class="menu-item-desc">Fragrant basmati rice cooked with tender chicken pieces, saffron, and a blend of aromatic spices.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="maincourse" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Pasta">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Creamy Alfredo Pasta</h3>
+                            <span class="menu-item-price">$13.99</span>
+                        </div>
+                        <p class="menu-item-desc">Fettuccine pasta in a rich creamy Alfredo sauce with mushrooms and parmesan cheese.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="maincourse" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Fried Rice">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Vegetable Fried Rice</h3>
+                            <span class="menu-item-price">$11.99</span>
+                        </div>
+                        <p class="menu-item-desc">Stir-fried rice with mixed vegetables, eggs, and soy sauce, perfectly seasoned.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc3RhdXJhbnQlMjBjaG9jb2xhdGUlMjBmdWRnZSUyMGJyb3duaWV8ZW58MHx8MHx8fDA%3D" alt="Chocolate Brownie">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Chocolate Brownie</h3>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <p class="menu-item-desc">Rich, fudgy chocolate brownie topped with vanilla ice cream and chocolate sauce.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="desserts" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Cheesecake">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">New York Cheesecake</h3>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                        <p class="menu-item-desc">Creamy, dense cheesecake with a graham cracker crust and strawberry topping.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="desserts" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ice Cream Sundae">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Ice Cream Sundae</h3>
+                            <span class="menu-item-price">$7.99</span>
+                        </div>
+                        <p class="menu-item-desc">Vanilla ice cream with chocolate syrup, whipped cream, nuts, and a cherry on top.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Cold Coffee">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Cold Coffee</h3>
+                            <span class="menu-item-price">$4.99</span>
+                        </div>
+                        <p class="menu-item-desc">Chilled espresso blended with milk, ice, and a hint of vanilla, topped with whipped cream.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="beverages" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Milkshake">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Chocolate Milkshake</h3>
+                            <span class="menu-item-price">$5.99</span>
+                        </div>
+                        <p class="menu-item-desc">Thick, creamy chocolate milkshake topped with whipped cream and chocolate sprinkles.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="beverages" style="display: none;">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Fresh Juice">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Fresh Orange Juice</h3>
+                            <span class="menu-item-price">$3.99</span>
+                        </div>
+                        <p class="menu-item-desc">Freshly squeezed orange juice, packed with vitamin C and natural sweetness.</p>
+                        <button class="btn btn-gold menu-item-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Dishes -->
+    <section class="specials" id="specials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Chef's Specials</h2>
+            </div>
+            
+            <div class="specials-grid">
+                <div class="special-dish">
+                    <div class="special-badge">Most Popular</div>
+                    <div class="special-dish-img">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Signature Jumbo Burger">
+                    </div>
+                    <div class="special-dish-content">
+                        <h3>Signature Jumbo Burger</h3>
+                        <p class="special-dish-price">$15.99</p>
+                        <p>Our legendary triple-decker burger with 3 beef patties, 4 types of cheese, crispy onion strings, and special flame sauce.</p>
+                        <button class="btn btn-primary" style="margin-top: 15px;">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="special-dish">
+                    <div class="special-badge">New</div>
+                    <div class="special-dish-img">
+                        <img src="https://images.unsplash.com/photo-1655471264223-b07ce84d521c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fENoaWNrZW4lMjBQaXp6YXxlbnwwfHwwfHx8MA%3D%3D" alt="Tandoori Chicken Pizza">
+                    </div>
+                    <div class="special-dish-content">
+                        <h3>Tandoori Chicken Pizza</h3>
+                        <p class="special-dish-price">$18.99</p>
+                        <p>Thin crust pizza topped with tandoori chicken, bell peppers, red onions, mozzarella, and our special spicy sauce.</p>
+                        <button class="btn btn-primary" style="margin-top: 15px;">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="special-dish">
+                    <div class="special-badge">Limited Time</div>
+                    <div class="special-dish-img">
+                        <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Loaded Fries Supreme">
+                    </div>
+                    <div class="special-dish-content">
+                        <h3>Loaded Fries Supreme</h3>
+                        <p class="special-dish-price">$12.99</p>
+                        <p>Crispy golden fries topped with melted cheese, bacon bits, jalapeños, sour cream, and chives.</p>
+                        <button class="btn btn-primary" style="margin-top: 15px;">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Make a Reservation</h2>
+            </div>
+            
+            <div class="reservation-form">
+                <form id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Your Phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7+ People</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1700768260750-0e476ffc744d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGNoZWYlMjBjb29raW5nfGVufDB8fDB8fHww" alt="Chef Cooking">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1671106672702-5626deb87b0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fENoaWNrZW4lMjBQaXp6YXxlbnwwfHwwfHx8MA%3D%3D" alt="Burger Closeup">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1608219994814-b97f95e101d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBpenphJTIwc2xpY2V8ZW58MHx8MHx8fDA%3D" alt="Pizza Slice">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+            </div>
+            
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="review-info">
+                            <h4>Sarah Johnson</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                    <p class="review-text">"The best burgers in town! I've been coming here for years and the quality never disappoints. The Double Patty Burger is my absolute favorite."</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="review-info">
+                            <h4>Michael Chen</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>First Time Visitor</p>
+                        </div>
+                    </div>
+                    <p class="review-text">"Incredible food and service! The Tandoori Chicken Pizza was a revelation. Will definitely be coming back with friends."</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Jessica Williams">
+                        </div>
+                        <div class="review-info">
+                            <h4>Jessica Williams</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Food Blogger</p>
+                        </div>
+                    </div>
+                    <p class="review-text">"As a food blogger, I've tried countless burger joints. FlameGrill Express stands out with their premium ingredients and creative recipes."</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="David Miller">
+                        </div>
+                        <div class="review-info">
+                            <h4>David Miller</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>Local Resident</p>
+                        </div>
+                    </div>
+                    <p class="review-text">"Great spot for a quick, quality meal. The loaded fries are to die for! Service is always fast and friendly."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Gourmet Street, Food District<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone & WhatsApp</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@flamegrillexpress.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Friday: 10am - 11pm<br>Saturday - Sunday: 9am - 12am</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.0042586242641!3d40.74076689757521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1689720912974!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>FlameGrill Express</h3>
+                    <p>Premium fast food crafted with passion and perfection. Experience flavors that will make your taste buds dance with joy.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#specials">Specials</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@flamegrillexpress.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 10am-11pm, Sat-Sun: 9am-12am</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 FlameGrill Express. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--gold);"></i> for food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+        </div>
+    </div>
+
+    <!-- Confirmation Message -->
+    <div class="confirmation-overlay" id="confirmationOverlay"></div>
+    <div class="confirmation" id="confirmation">
+        <div class="confirmation-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Reservation Confirmed!</h3>
+        <p>Thank you for choosing FlameGrill Express. Your table has been reserved successfully. We'll send you a confirmation email shortly.</p>
+        <button class="btn btn-primary" id="closeConfirmation" style="margin-top: 20px;">Close</button>
+    </div>
+    <script src="burger.js"></script>
+</body>
+</html>
